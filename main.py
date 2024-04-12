@@ -10,8 +10,10 @@ socketio=SocketIO(app)
 
 @app.route("/", methods=["GET", "POST"])
 def home():
-    val={"message":"hello world"}
-    return val
+    # val={"message":"hello world"}
+    # return val
+
+    return render_template("home.html")
 
 if __name__ =="__main__":
     socketio.run(app, debug=True)
