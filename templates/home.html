@@ -19,5 +19,13 @@
   <button type="submit" name="create" class="create-btn">
     create a new room
   </button>
+
+  {% if error%}
+
+  <ul>
+    <li>{{error}}</li>
+  </ul>
+
+  {% endif %}
 </form>
 {%endblock%}
